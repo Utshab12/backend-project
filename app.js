@@ -61,7 +61,7 @@ router.post('/post/json', function(req, res) {
     xmlFileToJs('rent.xml', function(err, result) {
       if (err) throw (err);
       //This is where you pass on information from the form inside index.html in a form of JSON and navigate through our JSON (XML) file to create a new entree object
-      result.rent.vehicles[obj.sec_n].make.push({'status': obj.status, 'rent': obj.rent}); //If your XML elements are differet, this is where you have to change to your own element names
+      result.vehicles.cars[obj.sec_n].make.push({'company': obj.company, 'status': obj.status,'rent':obj.rent}); //If your XML elements are differet, this is where you have to change to your own element names
       //Converting back to our original XML file from JSON
       jsToXmlFile('rent.xml', result, function(err) {
         if (err) console.log(err);
@@ -86,7 +86,7 @@ router.post('/post/delete', function(req, res) {
     xmlFileToJs('rent.xml', function(err, result) {
       if (err) throw (err);
       //This is where we delete the object based on the position of the section and position of the entree, as being passed on from index.html
-      delete result.rent.vehicles[obj.vehicles].make[obj.make];
+      delete result.vehicles.cars[obj.cars].make[obj.make];
       //This is where we convert from JSON and write back our XML file
       jsToXmlFile('rent.xml', result, function(err) {
         if (err) console.log(err);
@@ -104,3 +104,4 @@ server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() 
   var addr = server.address();
   console.log("Server listening at", addr.address + ":" + addr.port);
 });
+

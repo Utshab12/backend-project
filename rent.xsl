@@ -7,9 +7,10 @@
                             <th colspan="3">Car rental Shop</th>
                         </tr>
                         <tr>
-                            
                             <th>Status</th>
-                            <th>Rent</th>
+                             <th>Rent</th>
+                            <th>Company</th>>
+                           
                         </tr>
                     </thead>
                     <tbody>
@@ -26,6 +27,9 @@
                                 </td>
                                 <td align="right">
                                     <xsl:value-of select="rent" />
+                                </td>
+                                <td align="right">
+                                    <xsl:value-of select="company" />
                                 </td>
                             </tr>
                             </xsl:for-each>

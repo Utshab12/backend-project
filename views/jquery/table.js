@@ -26,7 +26,7 @@ function select_row()
 		$(this).addClass("selected");
 		var cars = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
 		var make = $(this).attr("id") - 1;
-		delete_row(section, entree);
+		delete_row(cars, make);
 	})
 };
 
@@ -40,7 +40,7 @@ function delete_row(car, mke)
 			type: "POST",
 			data:
 			{
-				car: car,
+				cars: car,
 				make: mke
 			},
 			cache: false,

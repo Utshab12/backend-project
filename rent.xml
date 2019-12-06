@@ -1,54 +1,44 @@
-<?xml version="1.0"?>
-<?xml-stylesheet Type="text/xsl" href="rent.xsl"?>
-
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <vehicles>
-	
-	<cars body="Small">
-
-		<make name="Honda">
-			<status>Available</status>
-			<rent>20</rent>
-		</make>
-
-		<make name="Suzuki">
-			<status>Available</status>
-			<rent>15</rent>
-		</make>
-
-		<make name="Peogeot">
-			<status>Not-Available</status>
-			<rent>21</rent>
-		</make>
-
-	</cars>
-
-	<cars body="Medium">
-
-		<make name="Toyota">
-			<status>Available</status>
-			<rent>20</rent>
-		</make>
-
-		<make name="Toyota">
-			<status>Not-Availabe</status>
-			<rent>32</rent>
-		</make>
-
-	</cars>
-
-
-	<cars body="Large">
-
-		<make name="BMW">
-			<status>Available</status>
-			<rent>20</rent>
-		</make>
-
-		<make name="Hyundai">
-			<status>Available</status>
-			<rent>34</rent>
-		</make>
-		
-	</cars>
-
+  <cars>
+    <make>
+      <company>Honda</company>
+      <status>Available</status>
+      <rent>20</rent>
+    </make>
+    <make>
+      <company>Suzuki</company>
+      <status>Available</status>
+      <rent>15</rent>
+    </make>
+    <make>
+      <company>Peugeot</company>
+      <status>Not-Available</status>
+      <rent>21</rent>
+    </make>
+  </cars>
+  <cars body="Medium">
+    <make>
+      <company>Toyota</company>
+      <status>Available</status>
+      <rent>20</rent>
+    </make>
+    <make>
+      <company>Toyota</company>
+      <status>Not-Availabe</status>
+      <rent>32</rent>
+    </make>
+  </cars>
+  <cars body="Large">
+    <make>
+      <company>Bmw</company>
+      <status>Available</status>
+      <rent>20</rent>
+    </make>
+    <make>
+      <company>Hyundai</company>
+      <status>Available</status>
+      <rent>34</rent>
+    </make>
+  </cars>
 </vehicles>

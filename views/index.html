@@ -40,17 +40,20 @@
 				<form enctype="application/json" action="/post/json" method="post">
 					<div class="form-group">
 						<select class="form-control" name="sec_n">
-							<option value="0">make</option>
-							<option value="1">staus</option>
-							<option value="2">rent</option>
+							<option value="0">Small</option>
+                            <option value="1">Medium</option>
+							<option value="2">Large</option>
 							
 						</select>
+					</div>
+                    <div class="form-group">
+						<input class="form-control" type="text" name="company" placeholder="Company">
 					</div>
 					<div class="form-group">
 						<input class="form-control" type="text" name="status" placeholder="Status">
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="make" placeholder="Make">
+						<input class="form-control" type="number" min="1" name="rent" placeholder="Rent">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
